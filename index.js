@@ -4,6 +4,7 @@ var uuid = require('uuid');
 
 var server = net.createServer(function(socket) {
   var incomingData = "";
+
   socket.on('data', function(data) {
     console.log(data.toString());
 
